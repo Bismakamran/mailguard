@@ -1,0 +1,45 @@
+<!-- detector.html - Email Phishing Detector Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Email Detector - MailGuard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">MailGuard</div>
+    <div class="nav-buttons">
+      <a href="index.html" class="nav-btn">Home</a>
+      <a href="login.html" class="nav-btn">Logout</a>
+    </div>
+  </nav>
+
+  <!-- 🚀 Wrap everything inside #detectorApp -->
+  <main class="container" id="detectorApp">
+    <h2>Email Phishing Detector</h2>
+
+    <!-- Drag & Drop Area -->
+    <div id="drop-area">
+      <p>📥 Drag & drop a file here or click to upload</p>
+      <input type="file" id="fileElem" />
+    </div>
+
+    <!-- Email Text Area -->
+    <textarea id="emailInput" placeholder="Paste your email content here..."></textarea>
+
+    <!-- URL Input -->
+    <div id="url">
+      <label for="urlInput">Enter Website URL:</label>
+      <input type="url" id="urlInput" name="urlInput" placeholder="e.g. https://example.com" required />
+    </div>
+
+    <button id="checkBtn">Check Email</button>
+    <p id="result"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
